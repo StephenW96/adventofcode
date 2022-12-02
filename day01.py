@@ -24,4 +24,9 @@ if __name__ == "__main__":
     total_cals = {k: sum(v) for k, v in elves_and_calories.items()}
     most_cals = max(total_cals.items(), key=lambda k: k[1])
 
+    # For extra star
+    # all_cals = [i[1] for i in total_cals.items()]
+    # top3 = sum(sorted(all_cals, reverse=True)[:3])
+    # print(top3)
+
     print(f'Elf number {most_cals[0]} has the most calories ({most_cals[1]} total calories)')
